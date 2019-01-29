@@ -7,7 +7,7 @@ attr_accessor :title, :backers
 def add_backer(name)
 
   @backers <<name
-  Backer.back_project
+  self.backer.back_project
 end
 
 
