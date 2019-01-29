@@ -6,7 +6,7 @@ attr_accessor :title, :backers
 def add_backer(name)
   @backers= []
   @backers <<name
-  @backers<<Backer.new
+  @backers<<Backer.new(name)
 
 end
 
