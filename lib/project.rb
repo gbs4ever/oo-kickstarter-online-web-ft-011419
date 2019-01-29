@@ -4,10 +4,10 @@ attr_accessor :title, :backers, :name
       @title = title
         @backers= []
     end
-  def add_backer(name)
+  def add_backer(backer)
 
-    backers << name
-    name.back_project << self
+    backers << backer
+    backer.back_project << self
   end
 
 
